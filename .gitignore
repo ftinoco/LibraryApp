@@ -1,6 +1,11 @@
-.git
 .vs
 packages
 
-/bin
-/obj
+/LibraryApp.API/bin
+/LibraryApp.API/obj
+
+/LibraryApp.Common/bin
+/LibraryApp.Common/obj
+
+/LibraryApp.WEB/bin
+/LibraryApp.WEB/obj
