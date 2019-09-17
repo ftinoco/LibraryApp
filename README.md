@@ -6,6 +6,6 @@ Solution architecture:
 
 The solution is structured by 3 project:
 
-...LibraryApp.API 
-...LibraryApp.WEB
-...LibraryApp.Common
+* LibraryApp.API 
++ LibraryApp.WEB
+- LibraryApp.Common
