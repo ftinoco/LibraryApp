@@ -1,2 +1,9 @@
 # LibraryApp
-Library app for test. Based in C#, ASP.NET MVC5, EF6 and ASP.NET WebApi
+
+Solution architecture: 
+![](./docs/images/solution_architecture.jpg)
+
+The solution is structured by 3 project:
+	* LibraryApp.API 
+	* LibraryApp.WEB
+	* LibraryApp.Common
