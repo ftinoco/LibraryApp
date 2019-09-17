@@ -8,12 +8,12 @@ The solution is structured by 3 project:
 
 * LibraryApp.API 
 
-	...Lorem ipsu
+	Lorem ipsu
 	
 + LibraryApp.WEB
 
-	..Lorem ipsu
+	Lorem ipsu
 	
 - LibraryApp.Common
 
-	.Cross layer where are defined the common objects and functionalities to API and WEB project
+	Cross layer where are defined the common objects and functionalities to API and WEB project
