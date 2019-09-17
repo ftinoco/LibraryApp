@@ -8,7 +8,7 @@ The solution is structured by 3 project:
 
 * LibraryApp.API 
 
-	Lorem ipsu
+	Here the entities are defined to access the database and serve them through endpoint
 	
 + LibraryApp.WEB
 
