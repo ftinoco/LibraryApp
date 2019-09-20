@@ -3,25 +3,25 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LibraryApp.API.Models.Context
 {
-    [MetadataType(typeof(AuthorApiModel))]
+    [MetadataType(typeof(AutorApiModel))]
     public partial class Autor
     {
 
     }
 
-    [MetadataType(typeof(StudentApiModel))]
+    [MetadataType(typeof(EstudianteApiModel))]
     public partial class Estudiante
     {
 
     }
 
-    [MetadataType(typeof(BookApiModel))]
+    [MetadataType(typeof(LibroApiModel))]
     public partial class Libro
     {
 
     }
 
-    [MetadataType(typeof(LoanApiModel))]
+    [MetadataType(typeof(PrestamoApiModel))]
     public partial class Prestamo
     {
 

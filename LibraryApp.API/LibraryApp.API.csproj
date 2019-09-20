@@ -148,10 +148,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ApiModel\AuthorApiModel.cs" />
-    <Compile Include="Models\ApiModel\BookApiModel.cs" />
-    <Compile Include="Models\ApiModel\LoanApiModel.cs" />
-    <Compile Include="Models\ApiModel\StudentApiModel.cs" />
+    <Compile Include="Models\ApiModel\AutorApiModel.cs" />
+    <Compile Include="Models\ApiModel\LibroApiModel.cs" />
+    <Compile Include="Models\ApiModel\PrestamoApiModel.cs" />
+    <Compile Include="Models\ApiModel\EstudianteApiModel.cs" />
     <Compile Include="Models\Context\Autor.cs">
       <DependentUpon>Library.tt</DependentUpon>
     </Compile>
