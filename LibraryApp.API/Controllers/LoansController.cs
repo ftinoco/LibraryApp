@@ -13,17 +13,19 @@ using LibraryApp.API.Models.Context;
 
 namespace LibraryApp.API.Controllers
 {
+    [RoutePrefix("api/loans")]
     public class LoansController : ApiController
     {
         private LibraryEntities db = new LibraryEntities();
 
-        // GET: api/Loans
+        [HttpGet]
         public IQueryable<Prestamo> GetPrestamo()
         {
             return db.Prestamo;
         }
 
-        // GET: api/Loans/5
+        [HttpGet]
+        [Route("{id}")]
         [ResponseType(typeof(Prestamo))]
         public async Task<IHttpActionResult> GetPrestamo(int id)
         {
@@ -36,7 +38,8 @@ namespace LibraryApp.API.Controllers
             return Ok(prestamo);
         }
 
-        // PUT: api/Loans/5
+        [HttpPut]
+        [Route("{id}")]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutPrestamo(int id, Prestamo prestamo)
         {
@@ -70,8 +73,7 @@ namespace LibraryApp.API.Controllers
 
             return StatusCode(HttpStatusCode.NoContent);
         }
-
-        // POST: api/Loans
+         
         [ResponseType(typeof(Prestamo))]
         public async Task<IHttpActionResult> PostPrestamo(Prestamo prestamo)
         {
@@ -101,7 +103,8 @@ namespace LibraryApp.API.Controllers
             return CreatedAtRoute("DefaultApi", new { id = prestamo.IdLector }, prestamo);
         }
 
-        // DELETE: api/Loans/5
+        [HttpDelete]
+        [Route("{id}")]
         [ResponseType(typeof(Prestamo))]
         public async Task<IHttpActionResult> DeletePrestamo(int id)
         {
