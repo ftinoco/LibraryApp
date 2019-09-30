@@ -95,11 +95,11 @@ namespace LibraryApp.API.Controllers
                 }
                 catch (DbUpdateConcurrencyException ex)
                 {
-                    return Request.CreateResponse(HttpStatusCode.BadRequest, new BaseResult()
+                    return Request.CreateResponse(HttpStatusCode.InternalServerError, new BaseResult()
                     {
                         ExceptionDetail = ex,
-                        StatusCode = HttpStatusCode.BadRequest,
-                        Message = string.Format("El campo clave de la entidad debe ser igual a {0}", id)
+                        StatusCode = HttpStatusCode.InternalServerError,
+                        Message = "Ocurrió un error en la operación"
                     });
                 }
             }
@@ -151,7 +151,7 @@ namespace LibraryApp.API.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, new Result<Estudiante>()
             {
                 Data = estudiante,
-                Message = "Se eliminó el registro exitosamente",
+                Message = "Registro eliminado",
                 StatusCode = HttpStatusCode.OK
             });
         }
